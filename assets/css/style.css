@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* BACKGROUND IMAGE */
+.background-image {
+    background-image: url("../images/manuel-cosentino-n--CMLApjfI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+/* TITLE PAGE */
+.game {
+    background: rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.game h1 {
+    font-weight: 25px;
+}  
+
+
+
+
+/* BOOTSTRAP IDENTIFIER */
+
+/* div[class^="container"] {
+    background-color: rgba(0, 0, 255, 0.2);
+    outline: 1px dotted rgba(0, 0, 0, 0.5);
+}
+/* div[class="row"] {
+    outline: 1px dotted rgba(0, 0, 0, 0.25);
+}
+
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2);
+    outline: 1px dotted rgba(0, 0, 0, 0.5);
+}
+div[class^="container-fluid"] {
+    background-color: rgba(92, 165, 165, 0.2);
+    outline: 1px dotted rgba(0, 0, 0, 0.5);
+} */

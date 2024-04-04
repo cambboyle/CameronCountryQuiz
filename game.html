@@ -26,14 +26,11 @@
 
         <!-- Main Page Text -->
         <div class="row game">
-            <div class="back-button col-sm-6 d-flex justify-content-start">
+            <div class="back-button d-flex flex-row justify-content-between">
                 <button class="btn btn-outline-light p-2" onclick="backToMenu()">
                     <i class="fas fa-arrow-left"></i>
                 </button>
-                
-            </div>
-            <div class="settings-button col-sm-6 d-flex justify-content-end">
-                <button class="btn btn-outline-light p-2" onclick="backToMenu()">
+                <button class="btn btn-outline-light p-2 " onclick="optionsMenu()">
                     <i class="fas fa-cog"></i>
                 </button>
             </div>
@@ -44,8 +41,8 @@
                 <p id="question">Question</p>
 
                 <!-- Flag Image -->
-                <div class="mx-auto p-3" id="flag-container">
-                    <img class="rounded-3 image-fluid" id="flag-image" src="" alt="Flag Image">
+                <div class="py-3 text-center image-container" id="flag-container">
+                    <img class="rounded-3" id="flag-image" src="" alt="Flag Image">
                 </div>
                 
                 <!-- Answers -->

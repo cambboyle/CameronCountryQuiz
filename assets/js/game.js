@@ -168,18 +168,19 @@ function startTimer() {
     timeRemaining = 15;
     timeDisplay.textContent = `Time: ${timeRemaining}`;
     intervalId = setInterval(() => {
-      timeRemaining--;
-      timeDisplay.textContent = `Time: ${timeRemaining}`;
-      if (timeRemaining === 0) {
-        clearInterval(intervalId);
-        isGameOver = true;
-        timerEndAlert.style.display = 'block';
-        playAgainButton.style.display = 'block';
-        backToMenuButton.style.display = 'block';
-        alert(`Game over! Your score is ${score}.`);
-      }
+        if (timeRemaining > 0) {
+            timeRemaining--;
+            timeDisplay.textContent = `Time: ${timeRemaining}`;
+        } else {
+            clearInterval(intervalId);
+            isGameOver = true;
+            timerEndAlert.style.display = 'block';
+            playAgainButton.style.display = 'block';
+            backToMenuButton.style.display = 'block';
+            alert(`Game over! Your score is ${score}.`);
+        }
     }, 1000);
-  }
+}
 
   // Play again function
 function playAgain() {

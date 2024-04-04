@@ -24,30 +24,24 @@
     <div class="container d-flex vh-100 justify-content-center align-items-center">
         <!-- Main Page Text -->
         <div class="row game">
+            <!-- Main Header-->
             <h1 class="main-header">Country Quiz</h1>
             <h4> by Cameron Boyle</h4>
+            <!-- Summary -->
             <p> A brief summary of the Quiz, instructions and more.</p>
+            <!-- Start & Options Buttons -->
             <div class=" d-grid p-2 col-sm-8 mx-auto">
-                <button class="btn btn-outline-light p-3">Start Quiz</button>
+                <button class="btn btn-outline-light p-3" onclick = "window.location.href='game.html';">
+                    Start Quiz
+                </button>
             </div>
             <div class="d-grid p-2 col-sm-8 mx-auto">
-                <button class="btn btn-outline-light p-3">Options</button>
+                <button class="btn btn-outline-light p-3"onclick = "window.location.href='#';">Options</button>
             </div>
-        <!-- Question Type 1 -->    
-        <!--
-            <div class="quiz">
-                <h2>Question</h2>
-                <div id="answer-buttons d-grid mx-auto col-sm-12">
-                    <button class="btn btn-outline-light">Answer 1</button>
-                    <button class="btn btn-outline-light">Answer 2</button>
-                    <button class="btn btn-outline-light">Answer 3</button>
-                    <button class="btn btn-outline-light">Answer 4</button>
-                </div>
-            </div>
-        -->
         </div>
     </div>
     
 </body>
 <script src="assets\js\main.js"></script>
+<script src="assets/js/game.js"></script>
 </html>

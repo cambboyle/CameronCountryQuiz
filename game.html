@@ -46,33 +46,36 @@
                 </div>
                 
                 <!-- Answers -->
-                <div id="answer-buttons d-grid mx-auto col-sm-12">
+                <div id="answer-buttons" class="btn-group d-grid mx-auto col-sm-12  gap-2 d-sm-flex">
                     <button class="btn btn-outline-light choice-btn p-2" onclick="checkAnswer(0)">Answer 1</button>
                     <button class="btn btn-outline-light choice-btn p-2" onclick="checkAnswer(1)">Answer 2</button>
                     <button class="btn btn-outline-light choice-btn p-2" onclick="checkAnswer(2)">Answer 3</button>
                     <button class="btn btn-outline-light choice-btn p-2" onclick="checkAnswer(3)">Answer 4</button>
                 </div>
             </div>
-            
-        <!-- Score Display -->
-            <div id="score">Score: 0</div>
-
-        <!-- Timer -->
-            <div id="time">Time: 0</div>
+            <!-- Correct Answer -->
+            <div class="correct-answer"></div>
+            <!-- Score & Timer -->
+            <div class="col-sm-12">
+                <!-- Score Display -->
+                <div id="score">Score: 0</div>
+                <!-- Timer -->
+                <div id="time">Time: 0</div>
+            </div>
 
             <div id="timer-end-alert" class="timer-end-alert" style="display: none;">
                 <h2>Time's up!</h2>
                 <p>Your game has ended.</p>
-              </div>
+            </div>
 
         <!-- End Game Buttons -->
-            <div id="play-again" class="play-again" style="display: none;">
+        <div class="end-buttons col-sm-12">
+            <div id="play-again" class="play-again py-1" style="display: none;">
                 <button id="play-again" onclick="playAgain()" class="btn btn-outline-light p-2">Play Again</button>
             </div>
-            <div id="back-to-menu" class="back-to-menu" style="display: none;">
+            <div id="back-to-menu" class="back-to-menu py-1" style="display: none;">
                 <button id="back-to-menu" onclick="backToMenu()" class="btn btn-outline-light p-2">Back to Menu</button>
             </div>
-            
         </div>
     </div>
     

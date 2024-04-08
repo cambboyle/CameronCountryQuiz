@@ -47,13 +47,13 @@ html, body {
 
 
 /* BOOTSTRAP IDENTIFIER */
-
-/* div[class^="container"] {
+/*
+ div[class^="container"] {
     background-color: rgba(0, 0, 255, 0.2);
     outline: 1px dotted rgba(0, 0, 0, 0.5);
 }
-/* div[class="row"] {
-    outline: 1px dotted rgba(0, 0, 0, 0.25);
+ div[class="row"] {
+    outline: 1px dotted rgba(64, 204, 35, 0.25);
 }
 
 div[class^="col-"] {
@@ -61,6 +61,6 @@ div[class^="col-"] {
     outline: 1px dotted rgba(0, 0, 0, 0.5);
 }
 div[class^="container-fluid"] {
-    background-color: rgba(92, 165, 165, 0.2);
+    background-color: rgba(231, 255, 13, 0.2);
     outline: 1px dotted rgba(0, 0, 0, 0.5);
-} */
+}

@@ -60,17 +60,33 @@ function startGame() {
 
 }
 
-// Handle user's choice
-function handleChoice(event) {
-    if (isGameOver) return;
+// Display the correct answer if wrong
+let correctAnswerElement = document.querySelector('.correct-answer');
+if (!correctAnswerElement) {
+  correctAnswerElement = document.createElement('div');
+  correctAnswerElement.classList.add('correct-answer');
+  questionDisplay.appendChild(correctAnswerElement);
+}
 
-    const selectedChoice = event.target.textContent;
-    const correctAnswer = getCorrectAnswer(currentQuestion, currentCountry);
-    if (selectedChoice === correctAnswer) {
-        score++;
-        scoreDisplay.textContent = `Score: ${score}`;
-    }
-    startGame();
+function displayCorrectAnswer() {
+  const correctAnswer = getCorrectAnswer(currentQuestion, currentCountry);
+  correctAnswerElement.textContent = `Correct answer: ${correctAnswer}`;
+}
+
+// Modify the handleChoice function to display the correct answer if the answer is incorrect
+function handleChoice(event) {
+  if (isGameOver) return;
+
+  const selectedChoice = event.target.textContent;
+  const correctAnswer = getCorrectAnswer(currentQuestion, currentCountry);
+  if (selectedChoice !== correctAnswer) {
+    displayCorrectAnswer();
+  } else {
+    correctAnswerElement.textContent = '';
+  }
+  score += selectedChoice === correctAnswer ? 1 : 0;
+  scoreDisplay.textContent = `Score: ${score}`;
+  startGame();
 }
 
 // Get 3 random countries

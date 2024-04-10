@@ -7,8 +7,6 @@ const flagImage = document.getElementById('flag-image');
 const choiceButtons = document.querySelectorAll('.choice-btn');
 const scoreDisplay = document.getElementById('score');
 const questionDisplay = document.getElementById('question');
-const timeDisplay = document.getElementById('time');
-const timerEndAlert = document.getElementById('timer-end-alert');
 const playAgainButton = document.getElementById('play-again');
 const backToMenuButton = document.getElementById('back-to-menu');
 
@@ -17,8 +15,6 @@ let countries = [];
 let currentCountry;
 let score = 0;
 let currentQuestion;
-let timeRemaining = 15; // 15 seconds
-let intervalId;
 let isGameOver = false;
 
 // Fetch countries data
@@ -54,10 +50,6 @@ function startGame() {
         btn.textContent = choices[index];
         btn.addEventListener('click', handleChoice);
     });
-
-    // Start the timer
-    startTimer();
-
 }
 
 // Display the correct answer if wrong
@@ -73,7 +65,7 @@ function displayCorrectAnswer() {
   correctAnswerElement.textContent = `Correct answer: ${correctAnswer}`;
 }
 
-// Modify the handleChoice function to display the correct answer if the answer is incorrect
+// Check Answer
 function handleChoice(event) {
   if (isGameOver) return;
 
@@ -179,25 +171,6 @@ function shuffleArray(array) {
     }
 }
 
-// Start the timer
-function startTimer() {
-    timeRemaining = 15;
-    timeDisplay.textContent = `Time: ${timeRemaining}`;
-    intervalId = setInterval(() => {
-        if (timeRemaining > 0) {
-            timeRemaining--;
-            timeDisplay.textContent = `Time: ${timeRemaining}`;
-        } else {
-            clearInterval(intervalId);
-            isGameOver = true;
-            timerEndAlert.style.display = 'block';
-            playAgainButton.style.display = 'block';
-            backToMenuButton.style.display = 'block';
-            alert(`Game over! Your score is ${score}.`);
-        }
-    }, 1000);
-}
-
   // Play again function
 function playAgain() {
     isGameOver = false;
@@ -220,3 +193,7 @@ function playAgain() {
   backToMenuButton.addEventListener('click', backToMenu);
 
 // --------------------------------------------------------
+
+// Modal
+
+  

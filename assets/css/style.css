@@ -11,7 +11,7 @@ html, body {
 
 /* BACKGROUND IMAGE */
 .background-image {
-    background-image: url("../images/manuel-cosentino-n--CMLApjfI-unsplash.jpg");
+    background-image: url("../images/nasa-Q1p7bh3SHj8-unsplash.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -45,6 +45,10 @@ html, body {
 
 }
 
+#question {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
 /* BOOTSTRAP IDENTIFIER */
 /*

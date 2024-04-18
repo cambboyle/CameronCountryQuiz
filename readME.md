@@ -24,8 +24,6 @@ Built using **HTML**, **CSS** and **JavaScript**
   - [Fonts](#fonts)
   - [Icons](#icons)
   - [Colouring](#colouring)
-  - [Style](#style)
-  - [Images](#images)
   - [Wireframes](#wireframes)
 - [Technology Used](#technology-used)
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
@@ -89,96 +87,128 @@ My target audience for this project is anyone who likes learning, flags or chall
 - Information Panel
   - Title, Author and a short summary of the game.
 
-  ![infoPanel](assets\images\readMe\infoPanel.png)
+![infoPanel]()
   
 - Start Button
   - When clicked, game.html is loaded and the game starts.
+
+![startQuizButton]()
 
 ### Quiz Page
 
 - Question
   - Randomly generated from a selection of 3 questions: "What is the capital of this country?", "What country is this?" and "What continent is this country in?".
+![question]()
 
 - Flag
   - Randomly selected using the REST Countries API, this works in hand with the answer choices so that the correct answer is always among the options.
+
+![flag]()
   
 - Answers Buttons
   - 1 answer is correct, the other 3 options are randomly selected from the REST Countries API.
   - If the script randomly picks the same answer twice, the script "re-rolls" until a non-duplicated option appears.
+
+![answerButtons]()
   
 - Score Counter
   - Gives the user feedback as to how many questions they have answered correctly.
-  
+
+![scoreCounter]()
+
 - Question Counter
   - Keeps track of the current question number and displays it out of how many the user has selected in the options modal (default is "out of 10").
+
+![questionCounter]()
 
 - Correct Answer
   - Displays only if the question is answered wrong.
   - Let's the user know the correct answer, so at least they are learning something even if they answer wrong.
 
+![correctAnswer]()
+
 - Back Button
   - Takes the user back to the index.html (home menu).
-  
+
+![backButton]()
+
 - Options Button
   - Opens up the options modal for the user.
-  
+
+![settingsButton]()
+
 - End Game Pop-up
   - An alert that appears when the user has reached their maximum specified questions.
   - Displays the users' score and tells them the game is over.
-  
+
+![endGamePopUp]()
+
 - End Game Buttons
   - "Play Again" restarts the game and sets everything back to its default.
   - "Back to Menu" takes the user back to the main menu.
-  
+
+![endGameButtons]()
+
 ### Options Modal
 
 - Question Number Slider
   - Lets the user determine how many questions they want in their quiz (Current maximum is 20).
-  
+
+![questionSlider]()
+
 - Save Changes Button
   - Saves the users' changes locally and applies them to the game.
 
+![saveButton]()
+
 ### Planned Features
 
-discuss possibilities for the future
+Different types of questions, for example presenting the user with a silhouette of a random country, and they get to choose between four answers.
+
+I'd also like to branch out into other geography based topics, like wonders of the world, mountain ranges and rivers etc.
+
+Another feature I would like to add in the future is to have a leaderboard, or groups where the user can compete with their friends or on a worldwide scale.
 
 #### Features That Didn't Make It
 
-- attempted to add options menu html, got everything working but couldn't get save feature to work when page is refreshed/reloaded
+- I attempted to add options menu html, got everything working but couldn't get save feature to work when page is refreshed/reloaded. Instead added the modal for the options in the game.html page. This way users' settings can be saved on the page itself instead of having to use more advanced local storage.
 
 ### Completed Project
 
-INSERT IMAGES OF SITE PAGES HERE
+Main Menu
+
+![Main Page]()
+
+Game Page
+
+![Game Page]()
+
+![with Menu]()
 
 ## Design Choices
 
-The design of the project was made to be easy to navigate and to be as minimal as possible, to get the user into the game as soon as possible
+The design of the project was made to be easy to navigate and to be as minimal as possible, to get the user into the game as quick as they can.
 
 ### Fonts
 
-The font I chose for this project was...
+I chose to use Montserrat from google Fonts for the font of the site, I used this one for my last project but I really enjoy the font and I think it works really well with the minimal aesthetic I'm going for.
 
 ### Icons
 
-Icons
+I used two icons in this project, both from Font Awesome. The cog for the settings and the left facing arrow for the back button. I used these as they are globally recognised for their purpose.
 
 ### Colouring
 
-colouring or lack thereof
-
-### Style
-
-rounded transparent boxes
-
-### Images
-
-the background image
+I chose to not use a lot of colour in this project. Most of the UI is transparent black with a white border, this choice mixes well with the background image I used which is a space picture of the Earth.
 
 ### Wireframes
 
 I decided to use Balsamiq for the wireframes for this project instead of Miro (used on last project), I used this because I wanted to try out different wireframing applications so I got a taste of everything.
 
 I really liked using Balsamiq but I much prefer Miro as I feel there is more opportunity with Miro.
+
+![0]()
+![1]()
 
 ## Technology Used
 
@@ -239,14 +269,55 @@ I tested the game on different browsers, devices and had multiple users test my 
 
 ### Deployment
 
+This project was made with VSCode, where I committed and pushed using Git to GitHub.
+
 #### GitHub Pages
+
+I deployed the page to GitHub pages from my GitHub repository. These were the steps I took to do this:
+
+1. Logged in to GitHub.
+2. Selected **cambboyle/CameronCountryQuiz** from the list of repositories.
+3. Clicked on the repo's settings.
+4. Scrolled down and selected the GitHub Pages tab.
+5. In the source dropdown, keep it as "Deploy from a branch", then select "Master" from the branch dropdown.
+6. Click Save, this should now start the build process for the site.
+
+The development branch and Master branch are completely identical.
 
 #### Local Clone
 
+1. Follow this link to the [GitHub Repository](https://github.com/cambboyle/CameronCountryQuiz).
+2. Click the green <> Code dropdown.
+3. Copy the HTTPS URL for the repository.
+4. In VSCode, open up the terminal.
+5. Change the directory to where you want the cloned directory to be stored.
+6. Type `git clone`, then the paste in the URL from the repo.
+7. Press enter in the terminal and the clone should be made.
+
 ## Credits
 
+icons - <https://fontawesome.com>
+
+extra notes and methods - <https://www.w3schools.com>
+
+bootstrap notes and media queries - <https://getbootstrap.com>
+
+material design for bootstrap - <https://mdbootstrap.com>
+
+background image by NASA on Unsplash - <https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8>
+
 - <https://www.youtube.com/watch?v=zUcc4vW-jsI>
-- Background Photo by NASA on Unsplash
-- REST Countries API Knowledge <https://www.dhiwise.com/post/a-comprehensive-guide-to-leveraging-the-rest-countries-api>
+
+REST Countries API - <>
+
+REST Countries API Knowledge <https://www.dhiwise.com/post/a-comprehensive-guide-to-leveraging-the-rest-countries-api>
 
 ### Validation Credits
+
+AmIResponsive - <https://ui.dev/amiresponsive?url=https%3A%2F%2Fbytes.dev>
+
+HTML Validator - <https://validator.w3.org>
+
+CSS Validator - <https://jigsaw.w3.org/css-validator/>
+
+JSHint - <>

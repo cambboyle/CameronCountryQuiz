@@ -29,7 +29,6 @@ Built using **HTML**, **CSS** and **JavaScript**
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 - [Testing](#testing)
   - [Manual Testing](#manual-testing)
-  - [Automated Testing](#automated-testing)
     - [Validation](#validation)
       - [HTML](#html)
       - [CSS](#css)
@@ -52,6 +51,10 @@ Built using **HTML**, **CSS** and **JavaScript**
 - Challenge themselves or challenge friends on the knowledge of flags & countries
 - Change settings to customise their experience
 - Replay the quiz as many times as they want
+
+Here is a quick example of how I want the user flow to look like, it is simple but there isn't much else to do in the game.
+
+![userFlow]()
 
 ##### First Time Visitor
 
@@ -242,23 +245,47 @@ I tested the game on different browsers, devices and had multiple users test my 
 
 #### Test 1 - Full Game
 
+Expected:  On loading the page, the user reads the brief information, clicks start quiz, answers their questions and click play again or back to menu when the game is over.
+
+Test: Follow the expected user flow.
+
+Result: Flow is successful as expected, the user can successfully replay the game at the end.
+
 #### Test 2 - Settings Save
+
+Expected: When the user is in the game menu, they can open the settings modal, change the amount of questions they desire and close the modal. Seeing that the game has updated to fit their specified settings.
+
+Test: User changes settings and continues their game with their new settings.
+
+Result: Successful user interaction with settings, choices are saved and game is updated when the modal is closed.
 
 #### Test 3 - Screen Sizing
 
-#### User Testing
+Expected: Mobile and Tablet devices are responsive and no issues are found.
 
-### Automated Testing
+Test: Loading the game on a mobile device and a tablet and testing the game functions, responsiveness and flow.
+
+Result: Working as expected, no faults on mobile or tablet browsers. This is visible in the AmIResponsive screenshot.
 
 #### Validation
 
 ##### HTML
 
+![HTML]()
+
 ##### CSS
+
+![CSS]()
 
 ##### Javascript
 
+![JS]()
+
 ##### Lighthouse
+
+![LighthouseDesktop]()
+
+![LighthouseMobile]()
 
 ### Bugs
 
@@ -296,21 +323,31 @@ The development branch and Master branch are completely identical.
 
 ## Credits
 
-icons - <https://fontawesome.com>
+Icons - <https://fontawesome.com>
 
-extra notes and methods - <https://www.w3schools.com>
+Google Fonts - <https://fonts.google.com/?query=montserrat>
 
-bootstrap notes and media queries - <https://getbootstrap.com>
+Extra notes and methods - <https://www.w3schools.com>
 
-material design for bootstrap - <https://mdbootstrap.com>
+Bootstrap notes - <https://getbootstrap.com>
 
-background image by NASA on Unsplash - <https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8>
+Bootstrap 5.3 Modal - <https://getbootstrap.com/docs/5.3/components/modal/>
 
-- <https://www.youtube.com/watch?v=zUcc4vW-jsI>
+Material design for bootstrap - <https://mdbootstrap.com>
 
-REST Countries API - <>
+Background image by NASA on Unsplash - <https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8>
+
+Getting an API using fetch() - <https://www.youtube.com/watch?v=zUcc4vW-jsI>
+
+Learning Balsamiq - <https://www.youtube.com/@balsamiq>
+
+REST Countries API - <https://restcountries.com>
 
 REST Countries API Knowledge <https://www.dhiwise.com/post/a-comprehensive-guide-to-leveraging-the-rest-countries-api>
+
+Answer Buttons same width using "btn-block" BS class - <https://forums.mobirise.com/discussion/22830/buttons-all-the-same-width>
+
+Centering a div to screen <https://mdbootstrap.com/how-to/bootstrap/center-div-vertically-and-horizontally/>.
 
 ### Validation Credits
 
@@ -320,4 +357,4 @@ HTML Validator - <https://validator.w3.org>
 
 CSS Validator - <https://jigsaw.w3.org/css-validator/>
 
-JSHint - <>
+JSHint - <https://jshint.com>

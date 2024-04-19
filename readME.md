@@ -7,7 +7,7 @@ This is a game I created aimed at testing players' knowledge of the flags of the
 
 Built using **HTML**, **CSS** and **JavaScript**
 
-![Am I Responsive](_)
+![Am I Responsive](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/AMIRESPONSIVE.png)
 
 ## Table of Contents
 
@@ -54,7 +54,7 @@ Built using **HTML**, **CSS** and **JavaScript**
 
 Here is a quick example of how I want the user flow to look like, it is simple but there isn't much else to do in the game.
 
-![userFlow]()
+![userFlow](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/UserFlow_WF.png)
 
 ##### First Time Visitor
 
@@ -90,79 +90,82 @@ My target audience for this project is anyone who likes learning, flags or chall
 - Information Panel
   - Title, Author and a short summary of the game.
 
-![infoPanel]()
+![infoPanel](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/infoPanel.png)
   
 - Start Button
   - When clicked, game.html is loaded and the game starts.
 
-![startQuizButton]()
+![startQuizButton](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/startQuizButton.png)
 
 ### Quiz Page
 
 - Question
   - Randomly generated from a selection of 3 questions: "What is the capital of this country?", "What country is this?" and "What continent is this country in?".
-![question]()
+![question](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/startQuizButton.png)
 
 - Flag
   - Randomly selected using the REST Countries API, this works in hand with the answer choices so that the correct answer is always among the options.
 
-![flag]()
+![flag](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/flag.png)
   
 - Answers Buttons
   - 1 answer is correct, the other 3 options are randomly selected from the REST Countries API.
   - If the script randomly picks the same answer twice, the script "re-rolls" until a non-duplicated option appears.
 
-![answerButtons]()
+![answerButtons](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/answerButtons.png)
   
 - Score Counter
   - Gives the user feedback as to how many questions they have answered correctly.
 
-![scoreCounter]()
+![scoreCounter](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/scoreCounter.png)
 
 - Question Counter
   - Keeps track of the current question number and displays it out of how many the user has selected in the options modal (default is "out of 10").
 
-![questionCounter]()
+![questionCounter](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/questionCounter.png)
 
 - Correct Answer
   - Displays only if the question is answered wrong.
   - Let's the user know the correct answer, so at least they are learning something even if they answer wrong.
 
-![correctAnswer]()
+![correctAnswer](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/correctAnswer.png)
 
 - Back Button
   - Takes the user back to the index.html (home menu).
 
-![backButton]()
+![backButton](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/backButton.png)
 
 - Options Button
   - Opens up the options modal for the user.
 
-![settingsButton]()
+![settingsButton](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/settingsButton.png)
 
 - End Game Pop-up
   - An alert that appears when the user has reached their maximum specified questions.
   - Displays the users' score and tells them the game is over.
 
-![endGamePopUp]()
+![endGamePopUp](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/endGamePopUp.png)
 
 - End Game Buttons
   - "Play Again" restarts the game and sets everything back to its default.
   - "Back to Menu" takes the user back to the main menu.
 
-![endGameButtons]()
+![endGameButtons](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/endGameButtons.png)
 
 ### Options Modal
+
+- Modal
+![optionsModal](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/optionModal.png)
 
 - Question Number Slider
   - Lets the user determine how many questions they want in their quiz (Current maximum is 20).
 
-![questionSlider]()
+![questionSlider](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/questionSlider.png)
 
 - Save Changes Button
   - Saves the users' changes locally and applies them to the game.
 
-![saveButton]()
+![saveButton](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/saveButton.png)
 
 ### Planned Features
 
@@ -180,13 +183,15 @@ Another feature I would like to add in the future is to have a leaderboard, or g
 
 Main Menu
 
-![Main Page]()
+![Main Page](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/mainPage.jpg)
 
 Game Page
 
-![Game Page]()
+![Game Page](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/gamePage.jpg)
 
-![with Menu]()
+![with Menu](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/gamePageWSettings.jpg)
+
+I opted to not customise the bootstrap for the options modal because I want it to stand out compared to the main game and the background.
 
 ## Design Choices
 
@@ -210,8 +215,10 @@ I decided to use Balsamiq for the wireframes for this project instead of Miro (u
 
 I really liked using Balsamiq but I much prefer Miro as I feel there is more opportunity with Miro.
 
-![0]()
-![1]()
+![landingPageWF](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/Landing_WF.png)
+![questionWF](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/Question_WF.png)
+![optionsOld](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/OptionsOLD_WF.png)
+![optionsModal](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/Modal_WF.png)
 
 ## Technology Used
 
@@ -271,21 +278,21 @@ Result: Working as expected, no faults on mobile or tablet browsers. This is vis
 
 ##### HTML
 
-![HTML]()
+![HTML](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/HTMLValidation.png)
 
 ##### CSS
 
-![CSS]()
+![CSS](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/CSSValidation.png)
 
 ##### Javascript
 
-![JS]()
+![JS](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/JSHintResults.png)
 
 ##### Lighthouse
 
-![LighthouseDesktop]()
+![LighthouseDesktop](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/LighthouseDesktop.png)
 
-![LighthouseMobile]()
+![LighthouseMobile](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/LighthouseMobile.png)
 
 ### Bugs
 
@@ -293,6 +300,9 @@ Result: Working as expected, no faults on mobile or tablet browsers. This is vis
 
 - Timer issue, as rounds progress, timer gets quicker but is not intended.
   - Get rid of timer, add "rounds" instead
+ 
+- Options.html didn't save settings when page was refreshed or new page was loaded.
+    - Fixed by implementing the Bootstrap Modal that contained options for the game on the game.html page.
 
 ### Deployment
 

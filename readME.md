@@ -7,7 +7,9 @@ This is a game I created aimed at testing players' knowledge of the flags of the
 
 Built using **HTML**, **CSS** and **JavaScript**
 
-![Am I Responsive](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/AMIRESPONSIVE.png)
+| Landing Page | Game Page |
+| :---: | :---: |
+| ![Am I Responsive Landing](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/AMIRESPONSIVE.png) | ![Am I Responsive Game](https://github.com/cambboyle/CameronCountryQuiz/blob/main/assets/images/readMe/AmIResponsiveGame.png) |
 
 ## Table of Contents
 
@@ -231,6 +233,7 @@ I really liked using Balsamiq but I much prefer Miro as I feel there is more opp
 - VS Code
 - Git
 - GitHub
+- GitHub pages
 - Google Fonts
 - Bootstrap 5.3
 - MD Bootstrap
